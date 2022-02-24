@@ -23,14 +23,15 @@ class etatPartie:
     - snake
     - vitesse
     - scene (trucs a afficher)"""
-    def __init__(self):
+        def __init__(self):
         self.score = 0
-        self.vitesse = 50
+        self.vitesse = 60
         self.bouffe = [0,0]
         self.seconde = 0
         self.temps = time.strftime("%H:%M:%S")
     def vitesseUp(self):
-        self.vitesse = self.vitesse - 50
+        if self.vitesse > 20:
+            self.vitesse = self.vitesse - 5
     def scoreUp(self):
         self.score = self.score + 25
     def setBouffe(self,y,x):
