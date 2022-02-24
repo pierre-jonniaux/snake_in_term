@@ -1,3 +1,4 @@
+import curses , traceback , random , time , sys , os
 # GLOBAL VAR
 ############
 # la hash avec les changement de coordonnees, on pourrait faire sans,
